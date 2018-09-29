@@ -16,12 +16,11 @@
 world_bank_results_framework_2012
 }
 \description{
-Papua New Guinea's Alotau Accord for a Government of Reconciliation, Unity and Hope
+Designing a results framework for achieving results: a how-to guide
 }
 \details{
-A dataset containing the text of Papua New Guinea's Alotau Accord for a
-Government of Reconciliation, Unity and Hope. The UTF-8 plain text is
-divided into elements of up to about 70 characters each. Some elements are
-blank.
+A dataset containing the text of Designing a results framework for achieving
+results: a how-to guide. The UTF-8 plain text is divided into elements of up
+to about 70 characters each. Some elements are blank.
 }
 \keyword{datasets}
