@@ -91,7 +91,6 @@ devtools::use_data(vogel_toc_review_2012, overwrite = TRUE)
 #
 ################################################################################
 
-#x <- pdf_text(pdf = "data-raw/docs/Herforth, Harris - 2014 - Understanding and Applying Primary Pathways and Principles Brief #1 Improving Nutrition through Agriculture Te.pdf")
 x <- pdf_text(pdf = "data-raw/docs/springdoc1.pdf")
 x <- str_split(x, pattern = "\n")
 
@@ -109,4 +108,27 @@ spring_brief_1 <- data_frame(linenumber = 1:length(spring_brief_1),
 
 devtools::use_data(spring_brief_1, overwrite = TRUE)
 
+
+################################################################################
+#
+# Fourth document
+#
+################################################################################
+
+x <- pdf_text(pdf = "data-raw/docs/springdoc2.pdf")
+x <- str_split(x, pattern = "\n")
+
+x[2:3] <- NULL
+
+spring_brief_2 <- NULL
+
+for(i in 1:length(x)) {
+  temp <- x[[i]]
+  spring_brief_2 <- c(spring_brief_2, temp)
+}
+
+spring_brief_2 <- data_frame(linenumber = 1:length(spring_brief_2),
+                             text = spring_brief_2)
+
+devtools::use_data(spring_brief_2, overwrite = TRUE)
 
