@@ -88,3 +88,30 @@ NULL
 #
 ################################################################################
 "spring_brief_1"
+
+
+################################################################################
+#
+#' spring_brief_2
+#'
+#' Understanding the Food Production Pathway
+#'
+#' A dataset containing the text of Understanding the Food Production Pathway.
+#' The UTF-8 plain text is divided into elements of up to about 70 characters
+#' each. Some elements are blank.
+#'
+#' @format A dataframe with 223 rows and 2 columns:
+#' \describe{
+#' \item{\code{linenumber}}{Line number}
+#' \item{\code{text}}{Character string of about 70 characters each}
+#' }
+#'
+#' @source \url{https://www.spring-nutrition.org/sites/default/files/publications/briefs/spring_foodproductionpathway_brief_2_0.pdf}
+#'
+#'
+#
+################################################################################
+"spring_brief_2"
+
+
+
