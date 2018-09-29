@@ -65,3 +65,26 @@ NULL
 ################################################################################
 "vogel_toc_review_2012"
 
+
+################################################################################
+#
+#' spring_brief_1
+#'
+#' Understanding and Applying Primary Pathways and Principles
+#'
+#' A dataset containing the text of Understanding and Applying Primary Pathways
+#' and Principles. The UTF-8 plain text is divided into elements of
+#' up to about 70 characters each. Some elements are blank.
+#'
+#' @format A dataframe with 396 rows and 2 columns:
+#' \describe{
+#' \item{\code{linenumber}}{Line number}
+#' \item{\code{text}}{Character string of about 70 characters each}
+#' }
+#'
+#' @source \url{https://www.spring-nutrition.org/sites/default/files/publications/briefs/spring_understandingpathways_brief_1.pdf}
+#'
+#'
+#
+################################################################################
+"spring_brief_1"
