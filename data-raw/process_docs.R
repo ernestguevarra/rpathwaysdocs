@@ -83,3 +83,15 @@ vogel_toc_review_2012 <- data_frame(linenumber = 1:length(vogel_toc_review_2012)
                                     text = vogel_toc_review_2012)
 
 devtools::use_data(vogel_toc_review_2012, overwrite = TRUE)
+
+
+################################################################################
+#
+# Third document
+#
+################################################################################
+
+x <- pdf_text(pdf = "data-raw/docs/Herforth, Harris - 2014 - Understanding and Applying Primary Pathways and Principles Brief #1 Improving Nutrition through Agriculture Te.pdf")
+x <- str_split(x, pattern = "\n")
+
+x[]
