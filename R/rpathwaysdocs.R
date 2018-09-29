@@ -22,12 +22,11 @@ NULL
 #
 #' world_bank_results_framework_2012
 #'
-#' Papua New Guinea's Alotau Accord for a Government of Reconciliation, Unity and Hope
+#' Designing a results framework for achieving results: a how-to guide
 #'
-#' A dataset containing the text of Papua New Guinea's Alotau Accord for a
-#' Government of Reconciliation, Unity and Hope. The UTF-8 plain text is
-#' divided into elements of up to about 70 characters each. Some elements are
-#' blank.
+#' A dataset containing the text of Designing a results framework for achieving
+#' results: a how-to guide. The UTF-8 plain text is divided into elements of up
+#' to about 70 characters each. Some elements are blank.
 #'
 #' @format A dataframe with 1352 rows and 2 columns:
 #' \describe{
@@ -42,4 +41,27 @@ NULL
 ################################################################################
 "world_bank_results_framework_2012"
 
+
+################################################################################
+#
+#' vogel_toc_review_2012
+#'
+#' Review of the use of Theory of Change in international development
+#'
+#' A dataset containing the text of Review of the use of Theory of Change in
+#' international development. The UTF-8 plain text is divided into elements of
+#' up to about 70 characters each. Some elements are blank.
+#'
+#' @format A dataframe with 2152 rows and 2 columns:
+#' \describe{
+#' \item{\code{linenumber}}{Line number}
+#' \item{\code{text}}{Character string of about 70 characters each}
+#' }
+#'
+#' @source \url{http://www.theoryofchange.org/pdf/DFID_ToC_Review_VogelV7.pdf}
+#'
+#'
+#
+################################################################################
+"vogel_toc_review_2012"
 
