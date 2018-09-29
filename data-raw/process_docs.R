@@ -11,7 +11,11 @@ library(stringr)
 library(tidytext)
 library(dplyr)
 
-
+################################################################################
+#
+# First document
+#
+################################################################################
 
 x <- pdf_text(pdf = "data-raw/docs/Roberts, Khattri - 2012 - Designing a results framework for achieving results a how-to guide.pdf")
 x <- str_split(x, pattern = "\n")
@@ -55,3 +59,27 @@ world_bank_results_framework_2012 <- data_frame(linenumber = 1:length(world_bank
                                                 text = world_bank_results_framework_2012)
 
 devtools::use_data(world_bank_results_framework_2012, overwrite = TRUE)
+
+
+################################################################################
+#
+# Second document
+#
+################################################################################
+
+x <- pdf_text(pdf = "data-raw/docs/DFID_ToC_Review_VogelV7.pdf")
+x <- str_split(x, pattern = "\n")
+
+x[c(2:5, 66:length(x))] <- NULL
+
+vogel_toc_review_2012 <- NULL
+
+for(i in 1:length(x)) {
+  temp <- x[[i]]
+  vogel_toc_review_2012 <- c(vogel_toc_review_2012, temp)
+}
+
+vogel_toc_review_2012 <- data_frame(linenumber = 1:length(vogel_toc_review_2012),
+                                    text = vogel_toc_review_2012)
+
+devtools::use_data(vogel_toc_review_2012, overwrite = TRUE)
