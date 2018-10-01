@@ -132,3 +132,50 @@ spring_brief_2 <- data_frame(linenumber = 1:length(spring_brief_2),
 
 devtools::use_data(spring_brief_2, overwrite = TRUE)
 
+
+################################################################################
+#
+# Fifth document
+#
+################################################################################
+
+x <- pdf_text(pdf = "data-raw/docs/springdoc3.pdf")
+x <- str_split(x, pattern = "\n")
+
+x[2] <- NULL
+
+spring_brief_3 <- NULL
+
+for(i in 1:length(x)) {
+  temp <- x[[i]]
+  spring_brief_3 <- c(spring_brief_3, temp)
+}
+
+spring_brief_3 <- data_frame(linenumber = 1:length(spring_brief_3),
+                             text = spring_brief_3)
+
+devtools::use_data(spring_brief_3, overwrite = TRUE)
+
+
+################################################################################
+#
+# Sixth document
+#
+################################################################################
+
+x <- pdf_text(pdf = "data-raw/docs/springdoc4.pdf")
+x <- str_split(x, pattern = "\n")
+
+x[2:3] <- NULL
+
+spring_brief_4 <- NULL
+
+for(i in 1:length(x)) {
+  temp <- x[[i]]
+  spring_brief_4 <- c(spring_brief_4, temp)
+}
+
+spring_brief_4 <- data_frame(linenumber = 1:length(spring_brief_4),
+                             text = spring_brief_4)
+
+devtools::use_data(spring_brief_4, overwrite = TRUE)
